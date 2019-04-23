@@ -1,0 +1,52 @@
+.button-area{
+    width:250px;
+    height:300px;
+    display:flex;
+    /* border:1px solid green; */
+}
+
+.numbers{
+    width:190px;
+    height:300px;
+    
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.number-card{
+    width:61.3px;
+    height:58px;
+    font-size:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid silver;
+}
+
+.wide{
+    width:190px;
+    height:59px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid silver;
+    font-size:30px;
+}
+
+.operators{
+    width:60px;
+    height:300px;
+    border:1px solid silver;
+    /* background:crimson; */
+}
+
+.operator-card{
+    width:60px;
+    height:58px;
+    font-size:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:crimson;
+    border:1px solid silver;
+}

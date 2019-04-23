@@ -1,1 +1,28 @@
 /* All styles for your header Components live here */
+.header-container{
+    /* border:2px solid red; */
+    display:flex;
+}
+
+.header-img{
+    /* border:2px solid yellow; */
+}
+
+.header-content{
+    /* border:2px solid green; */
+}
+
+.header-title{
+    /* border:2px solid blue; */
+}
+
+.top{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.top div{
+    margin:0 10px;
+    color:grey;
+}

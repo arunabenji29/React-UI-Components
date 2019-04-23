@@ -1,1 +1,26 @@
 /* All styles for your Card Components live here */
+.card-container{
+    /* border:2px solid green; */
+    padding-left:16%;
+    padding-right:2%;
+}
+
+.card-content{
+    /* border:2px solid blue; */
+    padding-left: 5%;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+.card-img{
+    width: 670px;
+    /* border:2px solid red; */
+    /* width:800px; */
+}
+
+img{
+    width:100%;
+}
+ 
