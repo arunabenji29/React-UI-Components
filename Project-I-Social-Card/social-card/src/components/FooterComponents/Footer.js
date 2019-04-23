@@ -1,21 +1,39 @@
 import React from 'react';
 import './Footer.css';
+
+
+
 const Footer = ()=>{
+    let tweetCount=0;
+    let heartCount = 0;
+
+    const updateTweetCount = () => {
+        tweetCount++
+        document.querySelector('.fa-retweet').textContent = tweetCount;
+    
+    }
+
+    const updateHeartCount = () => {
+        heartCount++
+        document.querySelector('.fa-heart').textContent = heartCount;
+    
+    }
     return (
         <div className='footer'>
             
-                <i class="far fa-comments"></i>
+                <i className="far fa-comments"></i>
             
             
-                <i class="fas fa-retweet">6</i>
+                <i className="fas fa-retweet" onClick = {updateTweetCount}>{tweetCount}</i>
             
             
-                <i class="far fa-heart">4</i>
+                <i className="far fa-heart" onClick = {updateHeartCount}>{heartCount}</i>
             
             
-                <i class="far fa-envelope"></i>
+                <i className="far fa-envelope"></i>
             
         </div>
     );
 }
+
 export default Footer
