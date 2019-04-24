@@ -3,8 +3,8 @@ import React from 'react';
 const EachNumber = props => {
     return (
         <div className='number-card'>
-            <div>{props.numberProp}</div>
-            {/* <button className={props.buttonStyle}>{props.numberProp}</button> */}
+            
+            <button className={props.numberProp.buttonStyle}>{props.numberProp.text}</button>
         </div>
     )
 }
