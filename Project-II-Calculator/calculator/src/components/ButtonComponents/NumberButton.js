@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.css';
 import EachButton from './EachButton'
-// import ActionButton from './ActionButton'
+
 
 const numbers = [{text:'Clear',buttonStyle:'wide'},
                  {text:'7',buttonStyle:'white'},
@@ -17,13 +17,13 @@ const numbers = [{text:'Clear',buttonStyle:'wide'},
                 ]
 
 
-const NumberButton = () => {
+const NumberButton = (props) => {
     return (
 
         <div className='numbers'>
 
                 {numbers.map(number => {
-                    return <EachButton numberProp={number} />
+                    return <EachButton noPropFn={props.numberPropFn} numberProp={number} />
                 })}
             
 

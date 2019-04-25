@@ -3,20 +3,24 @@ import './Button.css';
 import WideButton from './WideButton';
 import NumberButton from './NumberButton';
 
-const actionContent =  [{text:'/',buttonStyle:'red'},{text:'X',buttonStyle:'red'},{text:'-',buttonStyle:'red'},
+const actionContent =  [{text:'/',buttonStyle:'red'},{text:'*',buttonStyle:'red'},{text:'-',buttonStyle:'red'},
 {text:'+',buttonStyle:'red'},
 {text:'=',buttonStyle:'red'}]
 
-const ActionButton = () => {
+
+
+const ActionButton = (props) => {
     return (
         <div className='button-area'>
             <div className='numbers'>
-                <NumberButton />
+                <NumberButton numberPropFn = {props.handleClick}/>
             </div>
-            <div className = 'action-button'>
+            <div className = 'action-button '
+            
+            >
                 {actionContent.map(action => {
                 
-                    return <WideButton wideProp = {action} />;
+                    return <WideButton widePropFn = {props.handleClick} wideProp = {action} />;
                 })}
             </div>
             
